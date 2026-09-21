@@ -1,0 +1,17 @@
+{
+  "name": "mango-ai-assistant-fullstack",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "setup": "npm --prefix frontend install",
+    "dev": "npx concurrently -k \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "python backend/app.py",
+    "build": "npm --prefix frontend run build",
+    "check:python": "python -m py_compile backend/app.py backend/config.py backend/model_service.py"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
+

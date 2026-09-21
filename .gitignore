@@ -1,0 +1,17 @@
+node_modules/
+frontend/node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+venv/Scripts/
+venv/bin/
+venv/lib/
+venv/include/
+venv/pyvenv.cfg
+.env
+backend/models/*.h5
+backend/uploads/
+!backend/uploads/.gitkeep
+backend/logs/*.log
+!backend/logs/.gitkeep
